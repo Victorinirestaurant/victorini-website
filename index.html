@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victorini | Italian Restaurant</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f1e5;
+    color: #29221e;
+    font-family: Georgia, serif;
+}
+
+header {
+    background: #501c25;
+    color: #f8f1e5;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #e6c58b;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f8f1e5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e6c58b;
+}
+
+.hero {
+    min-height: 570px;
+    background:
+        linear-gradient(90deg, rgba(35,12,15,.88), rgba(35,12,15,.35)),
+        radial-gradient(ellipse at 75% 50%, #a66b42, #501c25 65%);
+    color: #fff8ec;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #e6c58b;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 90px);
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #eee0d2;
+    max-width: 470px;
+}
+
+.gold-line {
+    width: 75px;
+    height: 2px;
+    background: #d8b477;
+    margin: 25px 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #d8b477;
+    color: #35171b;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.button:hover {
+    background: #f0d5a3;
+}
+
+section {
+    padding: 85px 9%;
+    text-align: center;
+}
+
+.section-label {
+    color: #9a623d;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 18px 0;
+    color: #501c25;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.9;
+    color: #65574e;
+    font-size: 17px;
+}
+
+.menu-section {
+    background: #eee3d2;
+}
+
+.menu-preview {
+    border: 1px solid #c9ad86;
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 40px 25px;
+}
+
+.menu-preview h3 {
+    color: #501c25;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.about-section {
+    background: #f8f1e5;
+}
+
+.about-decoration {
+    font-size: 48px;
+    color: #b58b58;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #35171b;
+    color: #f8f1e5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    color: #e6c58b;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #d9c8b7;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 65px 8%;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VICTORINI</div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <div class="small-title">A Taste of Italy</div>
+
+        <h1>Victorini</h1>
+
+        <div class="gold-line"></div>
+
+        <p>
+            A place for good food, good company,
+            and memorable moments.
+        </p>
+
+        <a href="#about" class="button">DISCOVER VICTORINI</a>
+    </div>
+</div>
+
+<section class="about-section" id="about">
+    <div class="about-decoration">✦</div>
+
+    <div class="section-label">Benvenuti</div>
+
+    <h2>Welcome to Victorini</h2>
+
+    <p class="description">
+        We're bringing a little taste of Italy to Morehead,
+        Kentucky. More details about our restaurant
+        and our story are coming soon.
+    </p>
+</section>
+
+<section class="menu-section" id="menu">
+    <div class="section-label">Something Delicious</div>
+
+    <h2>Our Menu</h2>
+
+    <p class="description">
+        We're working on putting together our menu.
+        Check back soon for more details.
+    </p>
+
+    <div class="menu-preview">
+        <h3>Coming Soon</h3>
+        <p class="description">
+            Our Italian food menu will be revealed here.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-label">Find Us</div>
+
+    <h2>Visit Victorini</h2>
+
+    <p class="description">
+        More information about our location,
+        opening hours, and contact details
+        will be available soon.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <h2>VICTORINI</h2>
+    <p>Italian Restaurant · Morehead, Kentucky</p>
+    <p>© 2026 Victorini. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
